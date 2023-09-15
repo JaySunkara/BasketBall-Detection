@@ -1,0 +1,15 @@
+path: /Users/jaysunkara/ObjectDetectionProject/BasketBall VAR/Data
+train: images/train
+val: images/valid
+test: images/test
+
+nc: 1
+names: ['ball']
+
+roboflow:
+  workspace: aidatasets-qwszk
+  project: video-1-k4106
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/aidatasets-qwszk/video-1-k4106/dataset/4
+
