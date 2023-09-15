@@ -5,5 +5,5 @@ This is a small playground project, inspired by other online versions. This mode
 https://github.com/JaySunkara/BasketBall-VAR/assets/73007885/83907072-f07d-42fc-85e6-6cb62ea16378
 
 
-https://github.com/JaySunkara/BasketBall-VAR/assets/73007885/90c448df-38af-4d88-becc-ecb07db9b026
+https://github.com/JaySunkara/BasketBall-VAR/assets/73007885/e470aee1-9140-4fe3-87ba-54b94ded87f4
 
