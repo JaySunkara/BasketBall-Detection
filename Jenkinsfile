@@ -12,7 +12,8 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff..."
+                python3 -m venv .venv
+                . .venv/bin/activate
                 pip install -r requirements.txt
                 '''
             }
@@ -21,7 +22,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff..."
+                . .venv/bin/activate        # re-activate for this shell
                 python3 hello.py
                 python3 hello.py --name=Jay
                 '''
