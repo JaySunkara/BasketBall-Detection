@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                python3 -m venv .venv
                 export PIP_BREAK_SYSTEM_PACKAGES=1
                 pip install -r requirements.txt
                 '''
