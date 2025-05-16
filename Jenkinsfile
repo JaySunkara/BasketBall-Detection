@@ -5,7 +5,7 @@ pipeline {
             }
       }
     triggers {
-        pollSCM 'H/2 * * * *'
+        pollSCM '* * * * *'
     }
     stages {
         stage('Build') {
@@ -13,7 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 python3 -m venv .venv
-                . .venv/bin/activate
+                export PIP_BREAK_SYSTEM_PACKAGES=1
                 pip install -r requirements.txt
                 '''
             }
@@ -22,7 +22,6 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                . .venv/bin/activate        # re-activate for this shell
                 python3 hello.py
                 python3 hello.py --name=Jay
                 '''
